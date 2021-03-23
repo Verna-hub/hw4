@@ -159,25 +159,12 @@ member <- list(
 n_years_later <- function(member_data, years) {
   # Write your code here
  
-for (person in member) {
+for (i in seq_along(member)) {  print ( member[[i]][[2]] + years ) 
 
-
-  
   
 } 
    
 }
-
-
-vol <- function(r, height = 1) {
-    volumn <- 3.14 * r * r * height
-    return(volumn)
-}
-
-
-
-
-
 
 
 ##### Do Not modify the code below #####
