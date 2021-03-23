@@ -1,5 +1,5 @@
 ---
-author: "未命名 B01201001 一般系"
+author: "呂佳蓉 B05305027 經濟系"
 title: "HW 4: List, Loop, and Data frame"
 date: | 
   | 2021-03-18
@@ -43,6 +43,9 @@ df
 ```{r}
 # Write your code here
 
+A <-( df$supp == "VC")
+df[A, -3]
+
 # should print out:
 #> # A tibble: 30 x 2
 #>      len supp 
@@ -68,6 +71,10 @@ df
 ```{r}
 # Write your code here
 
+ df[(df$len < 25) & (df$supp == "VC"),  ]
+
+
+
 # should print out:
 #> # A tibble: 24 x 3
 #>      len supp   dose
@@ -92,6 +99,9 @@ df
 
 ```{r}
 # Write your code here
+
+df[df$len +15*df$dose >= 40, ]
+
 
 # should print out:
 #> # A tibble: 24 x 3
@@ -148,7 +158,26 @@ member <- list(
 
 n_years_later <- function(member_data, years) {
   # Write your code here
+ 
+for (person in member) {
+
+
+  
+  
+} 
+   
 }
+
+
+vol <- function(r, height = 1) {
+    volumn <- 3.14 * r * r * height
+    return(volumn)
+}
+
+
+
+
+
 
 
 ##### Do Not modify the code below #####
